@@ -13,9 +13,9 @@ const Hero = () => {
         <HeroItems>
           <HeroH1>Destinations</HeroH1>
           <HeroP>Places</HeroP>
-          {/* <Button>
+          <Button primary="true" big="true" round="true" to="/trips" style={{zIndex: 12000}}>
             Travel Now
-          </Button> */}
+          </Button>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -74,7 +74,7 @@ const HeroContent = styled.div`
   z-index: 3;
   height: calc(100vh - 80px);
   max-height: 100%;
-  padding: 0rem calc((100vw - 130px) / 2);
+  padding: 0rem;
 `
 
 const HeroItems = styled.div`
@@ -91,21 +91,20 @@ const HeroItems = styled.div`
 `
 
 const HeroH1 = styled.div`
-  font-size: 150%;
-  background-color: red;
+  /* font-size: 4rem; */
+  /* background-color: red; */
   z-index: 12000;
   /* font-size: 4rem; */
-  /* font-size: clamp(1.5rem, 6vw, 4rem); */
+  font-size: clamp(1.5rem, 6vw, 4rem);
   margin-bottom: 1.5rem;
-  /* letter-spacing: 3px; */
-  /* padding: 0 1rem; */
+  letter-spacing: 3px;
+  padding: 0 1rem;
 `
 
 const HeroP = styled.div`
-background-color: red;
+/* background-color: red; */
 z-index: 12000;
-  /* font-size: 4rem; */
-  /* font-size: clamp(1rem, 3vw, 3rem); */
-  margin-bottom: 2rem;
-  font-weight: 400;
+font-size: clamp(1rem, 3vw, 3rem);
+margin-bottom: 2rem;
+font-weight: 400;
 `
