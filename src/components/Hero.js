@@ -1,19 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
-import Video from "../assets/videos/video.mp4"
+import Video from "../assets/videos/bgvid.mp4"
 
 const Hero = () => {
   return (
     <HeroContainer>
-      <HeroBg>
-        <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
-      </HeroBg>
       <HeroContent>
+        <HeroBg>
+            <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
+          </HeroBg>
         <HeroItems>
           <HeroH1>Destinations</HeroH1>
           <HeroP>Places</HeroP>
-          <Button primary="true" big="true" round="true" to="/trips">
+          <Button primary="true" big="true" round="true" to="/trips" style={{zIndex: 12000}}>
             Travel Now
           </Button>
         </HeroItems>
@@ -74,7 +74,7 @@ const HeroContent = styled.div`
   z-index: 3;
   height: calc(100vh - 80px);
   max-height: 100%;
-  padding: 0rem calc((100vw - 130px) / 2);
+  padding: 0rem;
 `
 
 const HeroItems = styled.div`
@@ -85,13 +85,16 @@ const HeroItems = styled.div`
   text-align: center;
   height: 100vh;
   max-height: 100%;
-  padding: 0;
   color: #fff;
   line-height: 1.1;
   font-weight: bold;
 `
 
 const HeroH1 = styled.div`
+  /* font-size: 4rem; */
+  /* background-color: red; */
+  z-index: 12000;
+  /* font-size: 4rem; */
   font-size: clamp(1.5rem, 6vw, 4rem);
   margin-bottom: 1.5rem;
   letter-spacing: 3px;
@@ -99,7 +102,9 @@ const HeroH1 = styled.div`
 `
 
 const HeroP = styled.div`
-  font-size: clamp(1rem, 3vw, 3rem);
-  margin-bottom: 2rem;
-  font-weight: 400;
+/* background-color: red; */
+z-index: 12000;
+font-size: clamp(1rem, 3vw, 3rem);
+margin-bottom: 2rem;
+font-weight: 400;
 `
