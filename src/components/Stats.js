@@ -131,7 +131,7 @@ const Icon = styled.div`
   text-align: center;
 `
 
-const Title = styled.p`
+const Title = styled.div`
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 0.5rem;
   text-align: center;
