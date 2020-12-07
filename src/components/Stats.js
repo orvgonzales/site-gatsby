@@ -118,7 +118,7 @@ const StatsBox = styled.div`
   -ms-flex: 1;
   flex: 1;
   height: 100%;
-  padding: 2rem calc((100vw - 1300px) / 2);
+  /* padding: 2rem calc((100vw - 1300px) / 2); */
 
   /* height: 100%;
   width: 100%;
